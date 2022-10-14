@@ -1,0 +1,159 @@
+#include <stdio.h >
+int menuProfesor();
+int menu_profesor;
+int validacion(int user, int clav);
+int validation(int id_est);
+void login();
+int menuEst();
+int psd;
+int i, j, l;
+int registro();
+int array[10];
+int notas();
+int validationEst();
+int promedio();
+int add = 0;
+int prom = 0;
+struct profesores {
+  int user;
+  int password;
+};
+struct profesores p[2] = {
+  {
+    123459,
+    678909
+  },
+  {
+    283889,
+    413239
+  }
+};
+struct estudiantes e[4] = {
+  {
+    {
+      192736,
+      123456
+    }, {
+      192736,
+      765432
+    }
+  },
+  {
+    192736,
+    1921
+  },
+  {
+    192736,
+    1924
+  }
+};
+int main() {
+  while (1) {
+    int menu;
+    printf("Bienvenidos al colegio Blue House SJ \n");
+    printf("Seleccione segun su rol: \n 1. Estudiante \n 2. Profesor \n 3. Salir \n");
+    scanf("%p", & menu);
+    switch (menu) {
+    case 1:
+      login();
+      menuProfesor();
+      break;
+    case 2:
+      login();
+      menuEst();
+      break;
+    case 3:
+      exit(1);
+      break;
+    default:
+      printf("Opcion invalida \n")
+    }
+  }
+  void login() {
+    printf("\n digite su usuario \t")
+    scanf("%d", & user);
+    printf("%d", & psd);
+    var = validacion(user, psd)
+  }
+  int validacion(int usuario, int contrasena) {
+    for (i = 0; i < 2; i++) {
+      if (d[i].usuario == user && d[i].contrasena == psd) {
+        return i;
+        break
+      } else {
+        printf("\n Clave o usuario invalido");
+        exit(1);
+      }
+      menuProfesor();
+    }
+  }
+}
+int menuProfesor {
+  printf("Bienvenidos al colegio Blue House SJ \n");
+  printf("Seleccione segun su rol: \n 1. Estudiante \n 2. Profesor \n 3. Salir \n");
+  scanf("%p", & menu);
+  switch (menuProfesor) {
+  case 1:
+    registro()
+    Notas();
+    break;
+  case 2:
+    validation();
+    break;
+  case 3:
+    Exit(1);
+    break;
+  default:
+    printf('Digite  una de las opciones mostradas \n');
+  }
+}
+int registro() {
+  printf('\n ingrese el codigo de estudiante \t');
+  scanf('%d', & codigo_estudiante);
+  x = validar(codigo_estudiante);
+  for (i = 0; i < 1, i++) {
+    if (e[i].usuariodeingreso == codigo_estudiante) {
+      return notas();
+      break;
+    } else {
+      printf('\n ususario innexistente');
+      exit(1);
+    }
+  }
+}
+
+int notas() {
+  fror(n = 0; n < 10; n++) {
+    printf('ingrese la nota para poder hacer la %d \n', n + 1);
+    scanf('%d', % arr[n]);
+  }
+}
+int menuestudiante() {
+  printf('1. Consultar \n 2. Promedio notas \n 3. Salir \n');
+  scanf('%i', & menuEst);
+  switch (menuEst) {
+  case 1:
+    Consultar();
+    break;
+  case 2;
+  notas()
+  break
+  case 3:
+    exit(1)
+    break;
+  default:
+    printf('opcion no valida \n');
+  }
+  int validation();
+  printf('sus notas son las siguientes: \n');
+  for (n = 0; n < 10; n++) {
+    printf('%d\n', arr[n]);
+  }
+  int Tabulacion() {
+    for (n = 0; n < 10; n++)
+      (suma = suma + n);
+    Tabulacion = suma\ n;
+    printf('su tabulacion de notas es:%.1d\n'
+      tabulacion)
+  }
+}
